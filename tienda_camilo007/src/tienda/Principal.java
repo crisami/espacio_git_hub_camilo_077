@@ -2,6 +2,7 @@ package tienda;
 
 
 public class Principal {
+	
 
 	Productos producto_Uno = new Productos();
 	Productos producto_Dos = new Productos();
@@ -18,10 +19,36 @@ public class Principal {
 	Tiendas tienda_uno = new Tiendas();
 	Tiendas tienda_Dos = new Tiendas();
 	Tiendas tienda_Tres = new Tiendas();
+
+
+	public static void main(String []args){
 	
-	public static void main(String[]args){
+		Object id_producto;
+		Object id_vendedor;
+		Object id_tienda;
 		
+		System.out.println("poner el id del producto");
+		id_producto = Leer.pedirCadena();
+		System.out.println("poner el id del vendedor");
+		id_vendedor = Leer.pedirCadena();
+		System.out.println("poner el id de la tienda");
+		id_tienda = Leer.pedirCadena();
 		
+		if(id_producto != null){
+			if(id_tienda != null){
+				if(id_vendedor !=null){
+					
+					
+			System.out.println("el id del producto es: "+id_producto);
+			System.out.println("el id del vendedor es: "+id_vendedor);
+			System.out.println("el id de la tienda es: "+id_tienda);
+				}
+			}
+		}
+		}
+		
+	
+
 	}
 	
-}
+
